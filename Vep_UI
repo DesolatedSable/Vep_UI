@@ -177,7 +177,7 @@ function VLib:Window(textgame)
 	CircleName.BackgroundTransparency = 1.000
 	CircleName.Size = UDim2.new(0, 38, 0, 37)
 	CircleName.Font = Enum.Font.Gotham
-	CircleName.Text = "R"
+	CircleName.Text = "H"
 	CircleName.TextColor3 = Color3.fromRGB(255, 255, 255)
 	CircleName.TextSize = 16.000
 
@@ -1328,26 +1328,26 @@ function VLib:Window(textgame)
 				end
 			)()
 		end
-	function ContainerItems:Label(text)
-    local Label = Instance.new("TextButton")
-    local LabelCorner = Instance.new("UICorner")
+		function ContainerItems:Label(text)
+			local Label = Instance.new("TextButton")
+			local LabelCorner = Instance.new("UICorner")
 
-    Label.Name = "Label"
-    Label.Parent = Container
-    Label.BackgroundColor3 = Color3.fromRGB(169, 169, 169)  -- Set to black
-    Label.Size = UDim2.new(0, 403, 0, 28)
-    Label.AutoButtonColor = false
-    Label.Font = Enum.Font.Gotham
-    Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Label.TextSize = 14.000
-    Label.Text = text
+			Label.Name = "Label"
+			Label.Parent = Container
+			Label.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+			Label.Size = UDim2.new(0, 403, 0, 28)
+			Label.AutoButtonColor = false
+			Label.Font = Enum.Font.Gotham
+			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Label.TextSize = 14.000
+			Label.Text = text
 
-    LabelCorner.CornerRadius = UDim.new(0, 6)
-    LabelCorner.Name = "LabelCorner"
-    LabelCorner.Parent = Label
+			LabelCorner.CornerRadius = UDim.new(0, 6)
+			LabelCorner.Name = "LabelCorner"
+			LabelCorner.Parent = Label
 
-    Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-end
+			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+		end
 
 		function ContainerItems:Textbox(text, disapper, callback)
 			local Textbox = Instance.new("TextButton")

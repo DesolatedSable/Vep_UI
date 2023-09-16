@@ -1334,7 +1334,7 @@ function VLib:Window(textgame)
 
     Label.Name = "Label"
     Label.Parent = Container
-    Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Set to black
+    Label.BackgroundColor3 = Color3.fromRGB(64, 64, 64)  -- Set to dark gray
     Label.Size = UDim2.new(0, 403, 0, 28)
     Label.AutoButtonColor = false
     Label.Font = Enum.Font.Gotham
@@ -1342,12 +1342,7 @@ function VLib:Window(textgame)
     Label.TextSize = 14.000
     Label.Text = text
 
-    LabelCorner.CornerRadius = UDim.new(0, 6)
-    LabelCorner.Name = "LabelCorner"
-    LabelCorner.Parent = Label
-
-    Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-end
+    LabelCorner.CornerRadius = U
 
 		function ContainerItems:Textbox(text, disapper, callback)
 			local Textbox = Instance.new("TextButton")
